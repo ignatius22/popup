@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <h2>Popup Form</h2>
+    <p class="welcome animate__animated animate__bounceInLeft">Welcome  To the website!!!</p>
+    <p class="sub-welcome">click on the open form button to view our contact form</p>
+
+
+    <button class="open-button animate__animated animate__rubberBand" id="openForm">Open Form</button>
+
+    <div class="form-popup animate__animated animate__backInDown" id="myForm">
+        <form  class="form-container">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"></textarea>
+            
+            <input type="submit" class="btn" value="Submit">
+            <button type="button" class="btn cancel " id="closeForm">Close</button>
+        </form>
+    </div>
+
+   <script src="./script.js"></script>
+<script src="anime.min.js"></script>
+
+
+</body>
+
+</html>
